@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+body {
+  background: linear-gradient(to left, #1AAC97, #00A8E7);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.card {
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card-text {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #42a5f5;
+  border-color: #42a5f5;
+}
+
+.btn-primary:hover {
+  background-color: #1e88e5;
+  border-color: #1e88e5;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.sidebar h4 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.sidebar p {
+  margin-bottom: 10px;
+}
+
+.card-container {
+  position: relative;
+  margin-left: 220px;
+  padding: 20px;
+}
+
+input, textarea, select {
+  outline: 0 !important;
+  box-shadow:none !important;
+}
+
+.disable-hover:hover {
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.background-transparent {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
