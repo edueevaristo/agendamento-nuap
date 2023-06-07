@@ -108,3 +108,22 @@ select {
   border-radius: 10px;
   width: 250px;
 }
+
+.ellipse-disp {
+  margin-left: 4px;
+  background-color: #00ff04;
+  border-radius: 50%;
+  color: #00ff26;
+  padding: 0 10px;
+}
+
+.ellipse-indis {
+  margin-left: 4px;
+  background-color: #f10505;
+  border-radius: 50%;
+  padding: 0 10px;
+}
+
+.swal-button-spacing {
+  margin-right: 10px;
+}
