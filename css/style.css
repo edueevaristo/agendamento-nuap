@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 body {
-  background: linear-gradient(to left, #1AAC97, #00A8E7);
+  background: rgb(212, 215, 215);
+  background: radial-gradient(circle, rgba(212, 215, 215, 1) 5%, rgba(91, 225, 220, 1) 100%);
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
+
 .card {
   border: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s;
+
 }
 
 .card:hover {
@@ -16,6 +20,7 @@ body {
 
 .card-body {
   padding: 20px;
+  height: 400px !important
 }
 
 .card-title {
@@ -63,9 +68,11 @@ body {
   padding: 20px;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   outline: 0 !important;
-  box-shadow:none !important;
+  box-shadow: none !important;
 }
 
 .disable-hover:hover {
@@ -76,4 +83,28 @@ input, textarea, select {
 .background-transparent {
   background-color: transparent !important;
   border-color: transparent !important;
+}
+
+.img-principal-centro {
+  height: 300px;
+}
+
+.img-principal-unimar {
+  height: 20px;
+}
+
+.text-size-agendamento,
+.style-tipo-agendamento-1 {
+  font-size: 20px;
+}
+
+.text-size-agendamento-2 {
+  font-size: 16px;
+}
+
+.select-analista:hover {
+  background-color: rgba(0, 157, 255, 0.1);
+  border: 50px;
+  border-radius: 10px;
+  width: 250px;
 }
