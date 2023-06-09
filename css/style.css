@@ -111,19 +111,227 @@ select {
 
 .ellipse-disp {
   margin-left: 4px;
+  margin-top: 10px;
   background-color: #00ff04;
   border-radius: 50%;
   color: #00ff26;
   padding: 0 10px;
+  height: 20px;
 }
 
 .ellipse-indis {
   margin-left: 4px;
+  margin-top: 10px;
   background-color: #f10505;
   border-radius: 50%;
+  color: #f10505;
   padding: 0 10px;
+  height: 20px;
 }
 
 .swal-button-spacing {
   margin-right: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card-body {
+    height: 500px !important;
+  }
+
+  .botoes-etapas {
+    margin-left: 10px !important;
+
+  }
+
+  .card-body {
+    height: 500px !important;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+  }
+
+  .card-container {
+    margin-left: 0;
+  }
+
+  .card-body {
+    height: 500px !important;
+  }
+
+  .botoes-etapas {
+    margin-left: 10px !important;
+
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+  }
+
+  .card-container {
+    margin-left: 0;
+  }
+
+  .card-body {
+    height: 500px !important;
+  }
+
+  .botoes-etapas {
+    margin-left: 10px !important;
+
+  }
+}
+
+@media only screen and (min-width: 790px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .card-container {
+    margin-left: 0;
+  }
+
+  .botoes-etapas {
+    margin-left: 10px !important;
+
+  }
+
+  .card-body {
+    height: 500px !important;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .card-container {
+    margin-left: 0;
+  }
+
+  .botoes-etapas {
+    margin-left: 10px !important;
+
+  }
+
+  .card-body {
+    height: 500px !important;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .sidebar {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-body {
+    height: auto !important;
+  }
+
+  .img-principal-centro {
+    height: 180px;
+  }
+
+  .title-agendamento-step-1 {
+    font-size: 20px;
+  }
+
+  .responsive-row-analistas {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botoes-etapas {
+    margin-left: 10px !important;
+
+  }
+
+}
+
+@media only screen and (max-width: 430px) {
+  .sidebar {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-body {
+    height: auto !important;
+  }
+
+  .img-principal-centro {
+    height: 180px;
+  }
+
+  .title-agendamento-step-1 {
+    font-size: 20px;
+  }
+
+  .responsive-row-analistas {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botoes-etapas {
+    margin-left: 10px !important;
+
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+  .sidebar {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-body {
+    height: auto !important;
+  }
+
+  .img-principal-centro {
+    height: 180px;
+  }
+
+  .title-agendamento-step-1 {
+    font-size: 20px;
+  }
+
+  .responsive-row-analistas {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botoes-etapas {
+    margin-left: 10px !important;
+
+  }
 }

@@ -44,7 +44,7 @@
                                     atendimento?</h2>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <div class="row justify-content-center mt-5">
+                                        <div class="row mt-5 d-flex justify-content-center">
                                             <div class="col-md-6">
                                                 <div class="form-check d-flex justify-content-center">
                                                     <label class="style-tipo-agendamento-1" id="tipo-agendamento-label-1">
@@ -67,8 +67,8 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <div style="margin-left: 67%;">
-                                <button type="button" class="btn btn-outline-danger" id="sucesso-falha-retorno">Voltar ao menu anterior</button>
+                            <div style="margin-left: 67%;" class="botoes-etapas">
+                                <button type="button" class="btn btn-outline-danger" id="sucesso-falha-retorno">Cancelar</button>
                                 <button type="button" class="btn btn-primary" id="step-1-next">Próximo</button>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                                             <label class="form-control col-md-2" for="disponibilidade-dias" id="label-dias-disponiveis">Dia disponível <span class="text-danger">(Obrigatório)</span></label>
                                             <input type="date" class="form-control col-md-10" aria-required="true" required>
                                         </div>
-                                        <div class="input-group mt-3" id="">
+                                        <div class="input-group mt-3 d-flex">
                                             <label class="form-control col-md-2 d-flex justify-content-center align-items-center" for="horario">Horários disponíveis</label>
                                             <div class=" form-control col-md-10" id="horarios-disponiveis">
                                               <!-- Não remover essa div, aqui serão adicionados os horários dinamicamente... -->
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <div style="margin-left: 80%;">
+                            <div style="margin-left: 80%;" class="botoes-etapas">
                                 <button type="button" class="btn btn-primary" onclick="voltarPasso()">Voltar</button>
                                 <button type="button" class="btn btn-primary" onclick="proximoPasso()">Avançar</button>
                             </div>
@@ -119,55 +119,72 @@
                                     <h2 class="text-center mt-2 mb-5 title-agendamento-step-1">Possui preferência por
                                         algum analista? Se sim, basta selecionar o analista desejado caso o mesmo esteja
                                         disponível.</h2>
-                                    <div class="row">
+                                    <div class="row responsive-row-analistas">
                                         <div class="form-check col-md-3 d-flex justify-content-center">
                                             <input class="form-check-input m-1 d-none" type="checkbox" id="checkbox-imagem">
                                             <label class="form-check-label select-analista" for="checkbox-imagem">
-                                              <img src="imgs/analista1.png" alt="Analista de Atendimento"> Anastácia Campos <span class="ellipse-indis"></span>
+                                              <img src="imgs/analista1.png" alt="Analista de Atendimento" class="img-fluid-analista">
+                                              Anastácia L
+                                              <span class="ellipse-indis"></span>
+                                            </label>
+                                        </div>
+                                        <!-- 9 -->
+                                        <div class="form-check col-md-3 d-flex justify-content-center">
+                                            <input class="form-check-input m-1 d-none" type="checkbox" id="checkbox-imagem">
+                                            <label class="form-check-label select-analista" for="checkbox-imagem">
+                                              <img src="imgs/analista2.png" alt="Analista de Atendimento" class="img-fluid-analista">
+                                              Eleonora S
+                                              <span class="ellipse-indis"></span>
                                             </label>
                                         </div>
                                         <div class="form-check col-md-3 d-flex justify-content-center">
                                             <input class="form-check-input m-1 d-none" type="checkbox" id="checkbox-imagem">
                                             <label class="form-check-label select-analista" for="checkbox-imagem">
-                                              <img src="imgs/analista2.png" alt="Analista de Atendimento"> Eleonor Bridge <span class="ellipse-indis"></span>
+                                              <img src="imgs/analista3.png" alt="Analista de Atendimento" class="img-fluid-analista">
+                                              Caroline L
+                                              <span class="ellipse-disp"></span>
                                             </label>
                                         </div>
                                         <div class="form-check col-md-3 d-flex justify-content-center">
                                             <input class="form-check-input m-1 d-none" type="checkbox" id="checkbox-imagem">
                                             <label class="form-check-label select-analista" for="checkbox-imagem">
-                                              <img src="imgs/analista3.png" alt="Analista de Atendimento"> Flávia Bertofend <span class="ellipse-disp"></span>
-                                            </label>
-                                        </div>
-                                        <div class="form-check col-md-3 d-flex justify-content-center">
-                                            <input class="form-check-input m-1 d-none" type="checkbox" id="checkbox-imagem">
-                                            <label class="form-check-label select-analista" for="checkbox-imagem">
-                                              <img src="imgs/analista4.png" alt="Analista de Atendimento"> Maria das Dores <span class="ellipse-disp"></span>
+                                              <img src="imgs/analista4.png" alt="Analista de Atendimento" class="img-fluid-analista">
+                                              Mariane L
+                                              <span class="ellipse-disp"></span>
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="row mt-5">
+                                    <div class="row mt-5 responsive-row-analistas">
                                         <div class="form-check col-md-3 d-flex justify-content-center">
                                             <input class="form-check-input m-1 d-none" type="checkbox" id="checkbox-imagem">
                                             <label class="form-check-label select-analista" for="checkbox-imagem">
-                                              <img src="imgs/analista5.png" alt="Analista de Atendimento"> Angélica Campos <span class="ellipse-indis"></span>
+                                              <img src="imgs/analista5.png" alt="Analista de Atendimento" class="img-fluid-analista">  
+                                              Angélica C
+                                              <span class="ellipse-indis"></span>
                                             </label>
                                         </div>
                                         <div class="form-check col-md-3 d-flex justify-content-center">
                                             <input class="form-check-input m-1 d-none" type="checkbox" id="checkbox-imagem">
                                             <label class="form-check-label select-analista" for="checkbox-imagem">
-                                              <img src="imgs/analista6.png" alt="Analista de Atendimento"> Helena Silva <span class="ellipse-disp"></span>
+                                              <img src="imgs/analista6.png" alt="Analista de Atendimento" class="img-fluid-analista">  
+                                              Helena S.
+                                              <span class="ellipse-disp"></span>
                                             </label>
                                         </div>
                                         <div class="form-check col-md-3 d-flex justify-content-center">
                                             <input class="form-check-input m-1 d-none" type="checkbox" id="checkbox-imagem">
                                             <label class="form-check-label select-analista" for="checkbox-imagem">
-                                              <img src="imgs/analista7.png" alt="Analista de Atendimento"> Amber de Souza <span class="ellipse-disp"></span>
+                                              <img src="imgs/analista7.png" alt="Analista de Atendimento" class="img-fluid-analista">
+                                              Regina S
+                                              <span class="ellipse-disp"></span>
                                             </label>
                                         </div>
                                         <div class="form-check col-md-3 d-flex justify-content-center">
                                             <input class="form-check-input m-1 d-none" type="checkbox" id="checkbox-imagem">
                                             <label class="form-check-label select-analista" for="checkbox-imagem">
-                                              <img src="imgs/analista8.png" alt="Analista de Atendimento"> Horácia Silva <span class="ellipse-disp"></span>
+                                              <img src="imgs/analista8.png" alt="Analista de Atendimento" class="img-fluid-analista">
+                                              Horácia S 
+                                              <span class="ellipse-disp"></span>
                                             </label>
                                         </div>
                                         <div class="form-control mt-5 border-0">
@@ -179,9 +196,9 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <div style="margin-left: 67%;">
+                            <div style="margin-left: 67%;" class="botoes-etapas">
                                 <button type="button" class="btn btn-primary" onclick="voltarPasso()">Voltar</button>
-                                <button type="button" class="btn btn-success" onclick="finalizarAgendamento()" id="recarregar">Finalizar Agendamento</button>
+                                <button type="button" class="btn btn-success" onclick="finalizarAgendamento()" id="recarregar">Agendar</button>
                             </div>
                         </div>
                     </div>
@@ -189,7 +206,7 @@
             </div>
         </div>
     </div>
-    <div class="d-flex justify-content-center img-principal-unimar mt-5"><img src="imgs/logo-unimar.png" alt="logo-unimar"></div>
+    <div class="d-flex justify-content-center img-principal-unimar mt-2"><img src="imgs/logo-unimar.png" alt="logo-unimar"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
